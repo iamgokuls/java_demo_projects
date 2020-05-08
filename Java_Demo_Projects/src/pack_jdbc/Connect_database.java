@@ -1,7 +1,9 @@
 package pack_jdbc;
 
+import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Connect_database {
@@ -17,6 +19,19 @@ public class Connect_database {
             } else {
                 System.out.println("Failed to make connection!");
             }
+            
+            String query="SELECT name FROM student";
+            Statement statement = conn.createStatement();
+            
+			//execute query
+			ResultSet rs = statement.executeQuery(query);
+			while (rs.next()) {				 
+			  
+			   String Name = rs.getString("name");
+			   System.out.println("Name : " + Name); 
+			}
+            
+			statement.close();
             conn.close();
     		System.out.println("Connection closed !");
 
