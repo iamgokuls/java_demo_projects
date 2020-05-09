@@ -109,6 +109,31 @@ Scanner sc=new Scanner(System.in);
 		
 	}
 	
+
+	
+	public void delete_account(String acc_no) {
+		
+		try {
+			
+			Statement statement;
+			
+			String query="DELETE FROM account WHERE acc_no="+"\'"+acc_no+"\'";
+			statement = conn.createStatement();
+			//execute query
+			statement.executeUpdate(query);
+			
+			System.out.println("Successfully deleted your account");
+			
+			statement.close();
+			
+		}
+		catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+		}
+		
+	}
+	
 	public void close() throws SQLException {
 		conn.close();
 		System.out.println("\nConnection closed.....\nThanks for using our service");
