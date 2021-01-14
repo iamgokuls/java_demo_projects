@@ -14,7 +14,6 @@ public class EmailApp {
 		//print em.getEmail();
 		//print em.getMaxCapacity();
 		
-		//em.showInfo();
 	}
 
 }
