@@ -99,4 +99,5 @@ public class Email {
 		System.out.println("Alternate mail : "+this.AlternateEmail);
 	}
 
+	
 }

@@ -10,10 +10,6 @@ public class EmailApp {
 		//em.setMaxCapacity(700);
 		//em.setPassword("sdkfh");
 		
-		//print em.getAltEmail();
-		//print em.getEmail();
-		//print em.getMaxCapacity();
-		
 	}
 
 }
