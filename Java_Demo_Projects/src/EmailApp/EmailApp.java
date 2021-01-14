@@ -4,7 +4,12 @@ public class EmailApp {
 	
 	public static void main(String[] args) {
 		
-		new Email("Gokul","Suresh");
+		Email em=new Email("Gokul","Suresh");
+		
+		//em.setAltEmail("sjfhlaks");
+		//em.setMaxCapacity(700);
+		//em.setPassword("sdkfh");
+		
 	}
 
 }
