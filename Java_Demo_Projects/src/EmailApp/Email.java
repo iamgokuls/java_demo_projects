@@ -39,6 +39,7 @@ public class Email {
 		
 		System.out.println("DEPARTMENT CODES: \n 1 for Sales\n 2 for Accounts \n 3 for Development \n 0 for None:  ");
 		System.out.println("Enter Department Code");
+		@SuppressWarnings("resource")
 		Scanner in=new Scanner(System.in);
 		int dep=in.nextInt();
 		
