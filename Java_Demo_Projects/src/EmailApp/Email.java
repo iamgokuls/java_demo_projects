@@ -10,7 +10,7 @@ public class Email {
 	private String email;
 	private String password;
 	private String AlternateEmail;
-	private int MaxCapacity=1000;
+	private int MaxCapacity=800;
 	private String companySuffix="abcompany.com";
 	
 	public Email(String first_name,String last_name) {
